@@ -14,7 +14,7 @@ A sada, vrijeme je za prvi korak rada na vašem projektu. 🙂 Za upis/opis vaš
 
 Ime i prezime | E-mail adresa (FOI) | JMBAG | Github korisničko ime
 ------------  | ------------------- | ----- | ---------------------
-Juraj Vito Kuhtić | mojaadresa@foi.hr | 000000000 | githubuser
+Juraj Vito Kuhtić | jkuhtic22@student.foi.hr | 0016160221 | githubuser
 
 
 ## Opis domene
