@@ -1,7 +1,6 @@
 # Softver za upravljanje recikliranjem i kapacitetima u gradu
 
 ## Podaci o studentu
-(Ispod promijenite samo drugi redak tablice!)
 
 Ime i prezime | E-mail adresa (FOI) | JMBAG | Github korisničko ime
 ------------  | ------------------- | ----- | ---------------------
@@ -9,7 +8,7 @@ Juraj Vito Kuhtić | jkuhtic22@student.foi.hr | 0016160221 | jkuhtic22
 
 
 ## Opis domene
-(Vlastitim riječima opišite domenu ili problem koji pokriva projekt vaše zadaće!)
+RecycleTrack bavi se problemom nemogućnosti praćenja dostupnih materijala, rezervacija istih, te praćenje recikliranja.
 
 ## Specifikacija projekta
 (Vlastitim riječima opišite zahtjeve za izradu ovog programskog proizvoda!)
