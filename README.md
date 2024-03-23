@@ -8,7 +8,7 @@ Juraj Vito Kuhtić | jkuhtic22@student.foi.hr | 0016160221 | jkuhtic22
 
 
 ## Opis domene
-RecycleTrack bavi se problemom nemogućnosti praćenja dostupnih materijala, rezervacija istih, te praćenje recikliranja.
+RecycleTrack bavi se problemom nemogućnosti praćenja dostupnih materijala, rezervacija istih, te praćenje recikliranja materijala u gradu Varaždinu
 
 ## Specifikacija projekta
 (Vlastitim riječima opišite zahtjeve za izradu ovog programskog proizvoda!)
