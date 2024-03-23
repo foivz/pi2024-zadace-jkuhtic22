@@ -8,10 +8,10 @@ Juraj Vito Kuhtić | jkuhtic22@student.foi.hr | 0016160221 | jkuhtic22
 
 
 ## Opis domene
-RecycleTrack bavi se problemom nemogućnosti praćenja dostupnih materijala, rezervacija istih, te praćenje recikliranja materijala u gradu Varaždinu
+Softver za upravljanje recikliranjem i kapacitetima u gradu ima cilj poboljšati procese prikupljanja, evidentiranja, rezervacije te praćenja reciklabilnih materijala u centrima za recikliranje. S obzirom na sve veći naglasak na zaštiti okoliša i održivom upravljanju otpadom, ovaj softver pruža potrebne alate za efikasno upravljanje materijalima, kapacitetima skladišta te generiranje izvještaja o recikliranju.
 
 ## Specifikacija projekta
-(Vlastitim riječima opišite zahtjeve za izradu ovog programskog proizvoda!)
+1. Eviden
 
 ## Zadatak
 https://elf.foi.hr/pluginfile.php/228640/mod_resource/content/3/Korisnički%20zahtjevi%20-%20Softver%20za%20upravljanje%20recikliranjem%20i%20kapacitetima%20u%20gradu.pdf
