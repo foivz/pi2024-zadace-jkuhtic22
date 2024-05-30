@@ -57,7 +57,14 @@ namespace RecycleTrack23
             return materijali;
         }
 
-        
+        public void Add(Materijal materijal)
+        {
+            string query = $"INSERT INTO [dbo].[Materijali] (Materijal, [Cijena po kilogramu (u eurima)]) VALUES ('{materijal.NazivMaterijala}', '{materijal.CijenaPoKilogramuUEurima}')";
+
+            DB.OpenConnection();
+            DB.ExecuteCommand(query);
+            DB.CloseConnection();
+        }
 
         public void Update(Materijal materijal)
         {

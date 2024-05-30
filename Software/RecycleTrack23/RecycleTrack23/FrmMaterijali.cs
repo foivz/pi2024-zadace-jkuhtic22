@@ -11,7 +11,6 @@ namespace RecycleTrack23
         public FrmMaterijali()
         {
             InitializeComponent();
-            dgvMaterijali.ReadOnly = true; // Postavite DataGridView kao ReadOnly na početku
             LoadData();
         }
 
@@ -27,62 +26,55 @@ namespace RecycleTrack23
             dgvMaterijali.DataSource = materijali;
         }
 
-     
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            Materijal noviMaterijal = new Materijal
+            {
+                NazivMaterijala = "Novi Materijal",
+                CijenaPoKilogramuUEurima = "0.00"
+            };
+            materijalRepozitorij.Add(noviMaterijal);
+            LoadData();
+        }
 
         private void btnEdit_Click(object sender, EventArgs e)
         {
-            if (dgvMaterijali.SelectedRows.Count > 0)
+            if (dgvMaterijali.SelectedCells.Count > 0)
             {
-                dgvMaterijali.ReadOnly = false; // Omogućite uređivanje
-                int id = Convert.ToInt32(dgvMaterijali.SelectedRows[0].Cells["Id"].Value);
-                Materijal izmijenjeniMaterijal = new Materijal
-                {
-                    Id = id,
-                    NazivMaterijala = "Izmijenjeni Materijal", // Zamijeni stvarnim vrijednostima
-                    CijenaPoKilogramuUEurima = "0.00" // Zamijeni stvarnim vrijednostima
-                };
-                // Omogućite uređivanje kontrola
-                EnableEditingControls(true);
-                // Spremljeno kod za ažuriranje će se izvršiti nakon što korisnik potvrdi izmjene
-            }
-        }
+                int rowIndex = dgvMaterijali.SelectedCells[0].RowIndex;
+                DataGridViewRow selectedRow = dgvMaterijali.Rows[rowIndex];
 
-        private void btnSaveEdit_Click(object sender, EventArgs e)
-        {
-            if (dgvMaterijali.SelectedRows.Count > 0)
-            {
-                int id = Convert.ToInt32(dgvMaterijali.SelectedRows[0].Cells["Id"].Value);
-                Materijal izmijenjeniMaterijal = new Materijal
+                int id = Convert.ToInt32(selectedRow.Cells["Id"].Value);
+                string nazivMaterijala = selectedRow.Cells["NazivMaterijala"].Value.ToString();
+                string cijenaPoKilogramuUEurima = selectedRow.Cells["CijenaPoKilogramuUEurima"].Value.ToString();
+
+                Materijal materijal = new Materijal
                 {
                     Id = id,
-                    NazivMaterijala = dgvMaterijali.SelectedRows[0].Cells["NazivMaterijala"].Value.ToString(),
-                    CijenaPoKilogramuUEurima = dgvMaterijali.SelectedRows[0].Cells["CijenaPoKilogramuUEurima"].Value.ToString()
+                    NazivMaterijala = nazivMaterijala,
+                    CijenaPoKilogramuUEurima = cijenaPoKilogramuUEurima
                 };
-                materijalRepozitorij.Update(izmijenjeniMaterijal);
-                dgvMaterijali.ReadOnly = true; // Vraćanje DataGridView na ReadOnly
-                LoadData();
-                // Onemogućite uređivanje kontrola
-                EnableEditingControls(false);
+
+                FrmEditMaterijal frmEditMaterijal = new FrmEditMaterijal(materijal);
+                if (frmEditMaterijal.ShowDialog() == DialogResult.OK)
+                {
+                    materijalRepozitorij.Update(frmEditMaterijal.Materijal);
+                    LoadData();
+                }
             }
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
-            if (dgvMaterijali.SelectedRows.Count > 0)
+            if (dgvMaterijali.SelectedCells.Count > 0)
             {
-                int id = Convert.ToInt32(dgvMaterijali.SelectedRows[0].Cells["Id"].Value);
+                int rowIndex = dgvMaterijali.SelectedCells[0].RowIndex;
+                DataGridViewRow selectedRow = dgvMaterijali.Rows[rowIndex];
+
+                int id = Convert.ToInt32(selectedRow.Cells["Id"].Value);
                 materijalRepozitorij.Delete(id);
                 LoadData();
             }
-        }
-
-        private void EnableEditingControls(bool enable)
-        {
-            txtSearch.Enabled = !enable;
-            btnSearch.Enabled = !enable;
-            btnEdit.Enabled = !enable;
-            btnDelete.Enabled = !enable;
-            btnSaveEdit.Enabled = enable;
         }
     }
 }
