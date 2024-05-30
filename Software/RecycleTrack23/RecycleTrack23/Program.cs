@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DBLayer;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -14,6 +15,8 @@ namespace RecycleTrack23
         [STAThread]
         static void Main()
         {
+            DB.SetConfiguration("PI2324_jkuthic22_User", "PI2324_jkuthic22_User", "{RDmyW(W");
+
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new FrmLogin());

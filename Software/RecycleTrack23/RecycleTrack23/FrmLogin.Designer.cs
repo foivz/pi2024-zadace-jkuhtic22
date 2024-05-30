@@ -37,9 +37,10 @@
             // 
             // btnLogin
             // 
-            this.btnLogin.Location = new System.Drawing.Point(419, 236);
+            this.btnLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.btnLogin.Location = new System.Drawing.Point(180, 214);
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(87, 46);
+            this.btnLogin.Size = new System.Drawing.Size(202, 46);
             this.btnLogin.TabIndex = 0;
             this.btnLogin.Text = "Prijava";
             this.btnLogin.UseVisualStyleBackColor = true;
@@ -47,42 +48,45 @@
             // 
             // txtPassword
             // 
-            this.txtPassword.Location = new System.Drawing.Point(394, 165);
+            this.txtPassword.Location = new System.Drawing.Point(57, 165);
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(100, 26);
+            this.txtPassword.Size = new System.Drawing.Size(325, 26);
             this.txtPassword.TabIndex = 1;
             this.txtPassword.UseSystemPasswordChar = true;
             // 
             // txtUsername
             // 
-            this.txtUsername.Location = new System.Drawing.Point(394, 127);
+            this.txtUsername.Location = new System.Drawing.Point(57, 71);
             this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(100, 26);
+            this.txtUsername.Size = new System.Drawing.Size(325, 26);
             this.txtUsername.TabIndex = 2;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(187, 127);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.label1.Location = new System.Drawing.Point(53, 35);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(51, 20);
+            this.label1.Size = new System.Drawing.Size(178, 29);
             this.label1.TabIndex = 3;
-            this.label1.Text = "label1";
+            this.label1.Text = "Korisničko ime:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(187, 165);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.label2.Location = new System.Drawing.Point(52, 122);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(51, 20);
+            this.label2.Size = new System.Drawing.Size(101, 29);
             this.label2.TabIndex = 4;
-            this.label2.Text = "label2";
+            this.label2.Text = "Lozinka:";
             // 
             // FrmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackColor = System.Drawing.Color.LimeGreen;
+            this.ClientSize = new System.Drawing.Size(434, 306);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtUsername);

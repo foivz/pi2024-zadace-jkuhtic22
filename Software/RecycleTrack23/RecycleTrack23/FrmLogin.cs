@@ -13,9 +13,9 @@ namespace RecycleTrack23
 {
     public partial class FrmLogin : Form
     {
-
         string username = "zaposlenik";
         string password = "test";
+
         public FrmLogin()
         {
             InitializeComponent();
@@ -25,25 +25,24 @@ namespace RecycleTrack23
         {
             if (txtUsername.Text == "")
             {
-                MessageBox.Show("Korisničko ime nije uneseno!", "Problem",
-                MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Korisničko ime nije uneseno!", "Problem", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else if (txtPassword.Text == "")
             {
-                MessageBox.Show("Lozinka nije unesena!", "Problem", MessageBoxButtons.OK,
-                MessageBoxIcon.Error);
+                MessageBox.Show("Lozinka nije unesena!", "Problem", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else
             {
                 if (txtUsername.Text == username && txtPassword.Text == password)
                 {
-                    MessageBox.Show("Dobrodošli!", "Prijavljeni ste",
-                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    this.Hide();
+                    FrmMaterijali frmMaterijali = new FrmMaterijali();
+                    frmMaterijali.ShowDialog();
+                    this.Close();
                 }
                 else
                 {
-                    MessageBox.Show("Krivi podaci!", "Problem", MessageBoxButtons.OK,
-                    MessageBoxIcon.Error);
+                    MessageBox.Show("Krivi podaci!", "Problem", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
         }
