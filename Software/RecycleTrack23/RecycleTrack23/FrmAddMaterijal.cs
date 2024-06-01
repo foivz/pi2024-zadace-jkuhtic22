@@ -35,5 +35,13 @@ namespace RecycleTrack23
 
             MaterijalRepozitorij.NoviMaterijal(materijal);
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FrmMaterijali frmMaterijali = new FrmMaterijali();
+            frmMaterijali.ShowDialog();
+            this.Close();
+        }
     }
 }
