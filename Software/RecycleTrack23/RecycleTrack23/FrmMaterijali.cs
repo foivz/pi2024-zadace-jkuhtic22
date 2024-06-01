@@ -21,6 +21,11 @@ namespace RecycleTrack23
         {
             List<Materijal> materijali = materijalRepozitorij.Search(txtSearch.Text);
             dgvMaterijali.DataSource = materijali;
+            dgvMaterijali.Columns["Id"].Visible = false;
+            dgvMaterijali.Columns["NazivMaterijala"].Width = 100;
+            dgvMaterijali.Columns["PostotakKapaciteta"].Width = 100;
+            dgvMaterijali.Columns["CijenaPoKilogramu"].Width = 100;
+            dgvMaterijali.Refresh();
         }
 
         
@@ -73,6 +78,19 @@ namespace RecycleTrack23
             this.Hide();
             FrmAddMaterijal frmAddMaterijal = new FrmAddMaterijal();
             frmAddMaterijal.ShowDialog();
+            this.Close();
+        }
+
+        private void dgvMaterijali_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FrmIzvjestaj frmIzvjestaj = new FrmIzvjestaj();
+            frmIzvjestaj.ShowDialog();
             this.Close();
         }
     }

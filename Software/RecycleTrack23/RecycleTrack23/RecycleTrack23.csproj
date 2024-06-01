@@ -61,6 +61,12 @@
     <Compile Include="FrmEditMaterijal.Designer.cs">
       <DependentUpon>FrmEditMaterijal.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmIzvjestaj.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmIzvjestaj.Designer.cs">
+      <DependentUpon>FrmIzvjestaj.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -73,6 +79,7 @@
     <Compile Include="FrmMaterijali.Designer.cs">
       <DependentUpon>FrmMaterijali.cs</DependentUpon>
     </Compile>
+    <Compile Include="Izvjestaj.cs" />
     <Compile Include="Materijal.cs" />
     <Compile Include="MaterijalRepozitorij.cs" />
     <Compile Include="Program.cs" />
@@ -82,6 +89,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmEditMaterijal.resx">
       <DependentUpon>FrmEditMaterijal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmIzvjestaj.resx">
+      <DependentUpon>FrmIzvjestaj.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>

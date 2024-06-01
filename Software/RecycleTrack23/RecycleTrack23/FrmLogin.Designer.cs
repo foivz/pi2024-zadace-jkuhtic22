@@ -37,17 +37,19 @@
             // 
             // btnLogin
             // 
+            this.btnLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(167)))), ((int)(((byte)(69)))));
             this.btnLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.btnLogin.Location = new System.Drawing.Point(180, 214);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(202, 46);
             this.btnLogin.TabIndex = 0;
             this.btnLogin.Text = "Prijava";
-            this.btnLogin.UseVisualStyleBackColor = true;
+            this.btnLogin.UseVisualStyleBackColor = false;
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // txtPassword
             // 
+            this.txtPassword.BackColor = System.Drawing.Color.Silver;
             this.txtPassword.Location = new System.Drawing.Point(57, 165);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(325, 26);
@@ -56,6 +58,7 @@
             // 
             // txtUsername
             // 
+            this.txtUsername.BackColor = System.Drawing.Color.Silver;
             this.txtUsername.Location = new System.Drawing.Point(57, 71);
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.Size = new System.Drawing.Size(325, 26);
@@ -85,7 +88,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.LimeGreen;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
             this.ClientSize = new System.Drawing.Size(434, 306);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -98,6 +101,7 @@
             this.Name = "FrmLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Prijava";
+            this.Load += new System.EventHandler(this.FrmLogin_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
