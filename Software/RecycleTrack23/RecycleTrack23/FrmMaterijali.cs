@@ -1,13 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
-
 namespace RecycleTrack23
 {
     public partial class FrmMaterijali : Form
     {
         private MaterijalRepozitorij materijalRepozitorij = new MaterijalRepozitorij();
-
         public FrmMaterijali()
         {
             InitializeComponent();
@@ -19,23 +17,13 @@ namespace RecycleTrack23
             List<Materijal> materijali = materijalRepozitorij.GetAll();
             dgvMaterijali.DataSource = materijali;
         }
-
         private void btnSearch_Click(object sender, EventArgs e)
         {
             List<Materijal> materijali = materijalRepozitorij.Search(txtSearch.Text);
             dgvMaterijali.DataSource = materijali;
         }
 
-        private void btnAdd_Click(object sender, EventArgs e)
-        {
-            Materijal noviMaterijal = new Materijal
-            {
-                NazivMaterijala = "Novi Materijal",
-                CijenaPoKilogramuUEurima = "0.00"
-            };
-            materijalRepozitorij.Add(noviMaterijal);
-            LoadData();
-        }
+        
 
         private void btnEdit_Click(object sender, EventArgs e)
         {
@@ -46,13 +34,16 @@ namespace RecycleTrack23
 
                 int id = Convert.ToInt32(selectedRow.Cells["Id"].Value);
                 string nazivMaterijala = selectedRow.Cells["NazivMaterijala"].Value.ToString();
-                string cijenaPoKilogramuUEurima = selectedRow.Cells["CijenaPoKilogramuUEurima"].Value.ToString();
+                string postotakKapaciteta = selectedRow.Cells["PostotakKapaciteta"].Value.ToString();
+                string cijenaPoKilogramu = selectedRow.Cells["CijenaPoKilogramu"].Value.ToString();
 
                 Materijal materijal = new Materijal
                 {
                     Id = id,
                     NazivMaterijala = nazivMaterijala,
-                    CijenaPoKilogramuUEurima = cijenaPoKilogramuUEurima
+                    PostotakKapaciteta=postotakKapaciteta,
+                    CijenaPoKilogramu = cijenaPoKilogramu
+                    
                 };
 
                 FrmEditMaterijal frmEditMaterijal = new FrmEditMaterijal(materijal);
@@ -75,6 +66,14 @@ namespace RecycleTrack23
                 materijalRepozitorij.Delete(id);
                 LoadData();
             }
+        }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FrmAddMaterijal frmAddMaterijal = new FrmAddMaterijal();
+            frmAddMaterijal.ShowDialog();
+            this.Close();
         }
     }
 }

@@ -10,8 +10,10 @@ namespace RecycleTrack23
     {
         public int Id { get; set; }
         public string NazivMaterijala { get; set; }
-        public string CijenaPoKilogramuUEurima { get; set; }
+
+        public string PostotakKapaciteta { get; set; }
+        public string CijenaPoKilogramu { get; set; }
+
+        
     }
-
-
 }

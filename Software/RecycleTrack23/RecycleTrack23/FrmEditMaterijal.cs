@@ -16,16 +16,20 @@ namespace RecycleTrack23
 
         public FrmEditMaterijal(Materijal materijal)
         {
-            InitializeComponent();  // Ovo se mora pozvati kako bi se inicijalizirale kontrole
+            InitializeComponent();  
             Materijal = materijal;
             txtNazivMaterijala.Text = materijal.NazivMaterijala;
-            txtCijenaPoKilogramuUEurima.Text = materijal.CijenaPoKilogramuUEurima;
+            txtPostotakKapaciteta.Text = materijal.PostotakKapaciteta;
+            txtCijenaPoKilogramu.Text = materijal.CijenaPoKilogramu;
+            txtCijenaPoKilogramu.Text = materijal.CijenaPoKilogramu;
         }
 
         private void btnSpremi_Click(object sender, EventArgs e)
         {
             Materijal.NazivMaterijala = txtNazivMaterijala.Text;
-            Materijal.CijenaPoKilogramuUEurima = txtCijenaPoKilogramuUEurima.Text;
+            Materijal.PostotakKapaciteta = txtPostotakKapaciteta.Text;
+            Materijal.CijenaPoKilogramu = txtCijenaPoKilogramu.Text;
+            Materijal.CijenaPoKilogramu = txtCijenaPoKilogramu.Text;
             this.DialogResult = DialogResult.OK;
             this.Close();
         }
