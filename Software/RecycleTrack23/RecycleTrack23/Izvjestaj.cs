@@ -10,11 +10,11 @@ namespace RecycleTrack23
     {
         public int IdIzvjestaja { get; set; }
         public string Naziv { get; set; }
-        public string Kupljeno { get; set; }
+        public int Kupljeno { get; set; }
         public string CijenaPoKilogramu { get; set; }
-        public string StanjeNaSkladistu { get; set; }
-        public string Reciklirano { get; set; }
+        public int StanjeNaSkladistu { get; set; }
 
-        public DateTime Datum { get; set; }
+        public int Reciklirano { get; set; }
+
     }
 }

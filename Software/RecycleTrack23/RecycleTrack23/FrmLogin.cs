@@ -51,5 +51,10 @@ namespace RecycleTrack23
         {
 
         }
+
+        private void btnZabLozinka_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Korisničko ime: zaposlenik \n Lozinka: test", "Zaboravljena lozinka", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
     }
 }

@@ -21,7 +21,8 @@ namespace RecycleTrack23
             txtNazivMaterijala.Text = materijal.NazivMaterijala;
             txtPostotakKapaciteta.Text = materijal.PostotakKapaciteta;
             txtCijenaPoKilogramu.Text = materijal.CijenaPoKilogramu;
-           
+            
+
         }
 
         private void btnSpremi_Click(object sender, EventArgs e)
@@ -30,6 +31,7 @@ namespace RecycleTrack23
             Materijal.PostotakKapaciteta = txtPostotakKapaciteta.Text;
             Materijal.CijenaPoKilogramu = txtCijenaPoKilogramu.Text;
             
+
             this.DialogResult = DialogResult.OK;
             this.Close();
         }
@@ -50,6 +52,16 @@ namespace RecycleTrack23
             FrmMaterijali frmMaterijali = new FrmMaterijali();
             frmMaterijali.ShowDialog();
             this.Close();
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FrmEditMaterijal_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

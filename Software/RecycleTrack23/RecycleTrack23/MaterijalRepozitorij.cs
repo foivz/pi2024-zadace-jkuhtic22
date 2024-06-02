@@ -79,5 +79,46 @@ namespace RecycleTrack23
             DB.CloseConnection();
 
         }
+        public static List<Izvjestaj> GetAllIzvjestaj1(int index)
+        {
+            string nazivTablice = string.Empty;
+            switch (index)
+            {
+                case 0:
+                    nazivTablice = "IzvjestajDan"; break;
+                case 1:
+                    nazivTablice = "IzvjestajTjedan"; break;
+                case 2:
+                    nazivTablice = "IzvjestajMjesec"; break;
+                case 3:
+                    nazivTablice = "IzvjestajGodina"; break;
+            }
+            List<Izvjestaj> izvjestaji = new List<Izvjestaj>();
+            if (nazivTablice.Length > 0)
+            {
+                string query = $"SELECT * FROM [dbo].[{nazivTablice}]";
+
+                DB.SetConfiguration("PI2324_jkuhtic22_DB", "PI2324_jkuhtic22_User", "{RDmyW(W");
+                DB.OpenConnection();
+                SqlDataReader reader = DB.GetDataReader(query);
+
+                while (reader.Read())
+                {
+                    izvjestaji.Add(new Izvjestaj
+                    {
+                        Naziv = reader.GetString(0),
+                        Kupljeno = reader.GetInt32(1),
+                        CijenaPoKilogramu = reader.GetDouble(2).ToString(),
+                        StanjeNaSkladistu = reader.GetInt32(3),
+                        Reciklirano = reader.GetInt32(4)
+
+                    });
+
+                }
+                reader.Close();
+                DB.CloseConnection();
+            }
+            return izvjestaji;
+        }
     }
 }
