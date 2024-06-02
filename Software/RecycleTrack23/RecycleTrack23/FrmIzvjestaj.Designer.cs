@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.cmbVrijeme = new System.Windows.Forms.ComboBox();
+            this.dgvIzvjestaj = new System.Windows.Forms.DataGridView();
             this.button1 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvIzvjestaj)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -44,23 +44,23 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Vremensko razdoblje";
             // 
-            // comboBox1
+            // cmbVrijeme
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(328, 25);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 28);
-            this.comboBox1.TabIndex = 1;
+            this.cmbVrijeme.FormattingEnabled = true;
+            this.cmbVrijeme.Location = new System.Drawing.Point(328, 25);
+            this.cmbVrijeme.Name = "cmbVrijeme";
+            this.cmbVrijeme.Size = new System.Drawing.Size(121, 28);
+            this.cmbVrijeme.TabIndex = 1;
             // 
-            // dataGridView1
+            // dgvIzvjestaj
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(16, 138);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 62;
-            this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(758, 250);
-            this.dataGridView1.TabIndex = 2;
+            this.dgvIzvjestaj.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvIzvjestaj.Location = new System.Drawing.Point(16, 138);
+            this.dgvIzvjestaj.Name = "dgvIzvjestaj";
+            this.dgvIzvjestaj.RowHeadersWidth = 62;
+            this.dgvIzvjestaj.RowTemplate.Height = 28;
+            this.dgvIzvjestaj.Size = new System.Drawing.Size(758, 250);
+            this.dgvIzvjestaj.TabIndex = 2;
             // 
             // button1
             // 
@@ -71,6 +71,7 @@
             this.button1.TabIndex = 3;
             this.button1.Text = "Generiraj";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // FrmIzvjestaj
             // 
@@ -79,13 +80,13 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(234)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.dgvIzvjestaj);
+            this.Controls.Add(this.cmbVrijeme);
             this.Controls.Add(this.label1);
             this.Name = "FrmIzvjestaj";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Izvještaj";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvIzvjestaj)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -94,8 +95,8 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.ComboBox cmbVrijeme;
+        private System.Windows.Forms.DataGridView dgvIzvjestaj;
         private System.Windows.Forms.Button button1;
     }
 }

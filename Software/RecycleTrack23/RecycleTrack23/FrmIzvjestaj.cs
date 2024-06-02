@@ -22,12 +22,13 @@ namespace RecycleTrack23
 
         private void LoadComboBoxValues()
         {
-            comboBox1.Items.Add("1 dan");
-            comboBox1.Items.Add("1 tjedan");
-            comboBox1.Items.Add("1 mjesec");
-            comboBox1.Items.Add("1 godina");
+            cmbVrijeme.Items.Add("1 dan");
+            cmbVrijeme.Items.Add("1 tjedan");
+            cmbVrijeme.Items.Add("1 mjesec");
+            cmbVrijeme.Items.Add("1 godina");
         }
-        
 
+        
+    
     }
 }

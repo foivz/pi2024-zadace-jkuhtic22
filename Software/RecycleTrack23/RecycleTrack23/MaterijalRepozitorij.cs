@@ -81,6 +81,7 @@ namespace RecycleTrack23
         }
         public static List<Izvjestaj> GetAllIzvjestaj1(int index)
         {
+            
             string nazivTablice = string.Empty;
             switch (index)
             {
@@ -106,11 +107,12 @@ namespace RecycleTrack23
                 {
                     izvjestaji.Add(new Izvjestaj
                     {
-                        Naziv = reader.GetString(0),
-                        Kupljeno = reader.GetInt32(1),
-                        CijenaPoKilogramu = reader.GetDouble(2).ToString(),
-                        StanjeNaSkladistu = reader.GetInt32(3),
-                        Reciklirano = reader.GetInt32(4)
+                        
+                        Naziv = reader.GetString(1),
+                        Kupljeno = reader.GetDouble(2).ToString(),
+                        CijenaPoKilogramu = reader.GetDouble(3).ToString(),
+                        StanjeNaSkladistu = reader.GetDouble(4).ToString(),
+                        Reciklirano = reader.GetDouble(5).ToString()
 
                     });
 
