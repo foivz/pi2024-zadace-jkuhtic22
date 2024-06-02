@@ -108,11 +108,11 @@ namespace RecycleTrack23
                     izvjestaji.Add(new Izvjestaj
                     {
                         
-                        Naziv = reader.GetString(1),
-                        Kupljeno = reader.GetDouble(2).ToString(),
-                        CijenaPoKilogramu = reader.GetDouble(3).ToString(),
-                        StanjeNaSkladistu = reader.GetDouble(4).ToString(),
-                        Reciklirano = reader.GetDouble(5).ToString()
+                        Naziv = reader.GetString(0),
+                        Kupljeno = reader.GetDouble(1).ToString(),
+                        CijenaPoKilogramu = reader.GetDouble(2).ToString(),
+                        StanjeNaSkladistu = reader.GetDouble(3).ToString(),
+                        Reciklirano = reader.GetDouble(4).ToString()
 
                     });
 

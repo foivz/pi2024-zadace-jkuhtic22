@@ -28,7 +28,26 @@ namespace RecycleTrack23
             cmbVrijeme.Items.Add("1 godina");
         }
 
-        
-    
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            LoadData();
+        }
+        private void LoadData()
+        {
+            List<string> data = new List<string>();
+            data.Add("1 dan");
+            data.Add("1 tjedan");
+            data.Add("1 mjesec");
+            data.Add("1 godina");
+
+            List<Izvjestaj> izvjestaji = MaterijalRepozitorij.GetAllIzvjestaj1(data.IndexOf(cmbVrijeme.SelectedItem as string));
+            dgvIzvjestaj.DataSource = izvjestaji;
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -40,9 +40,9 @@
             // 
             this.btnLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(199)))), ((int)(((byte)(164)))));
             this.btnLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
-            this.btnLogin.Location = new System.Drawing.Point(264, 232);
+            this.btnLogin.Location = new System.Drawing.Point(277, 232);
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(219, 51);
+            this.btnLogin.Size = new System.Drawing.Size(237, 71);
             this.btnLogin.TabIndex = 0;
             this.btnLogin.Text = "Prijava";
             this.btnLogin.UseVisualStyleBackColor = false;
@@ -89,9 +89,9 @@
             // 
             this.btnZabLozinka.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(199)))), ((int)(((byte)(164)))));
             this.btnZabLozinka.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnZabLozinka.Location = new System.Drawing.Point(21, 232);
+            this.btnZabLozinka.Location = new System.Drawing.Point(25, 232);
             this.btnZabLozinka.Name = "btnZabLozinka";
-            this.btnZabLozinka.Size = new System.Drawing.Size(219, 51);
+            this.btnZabLozinka.Size = new System.Drawing.Size(237, 71);
             this.btnZabLozinka.TabIndex = 5;
             this.btnZabLozinka.Text = "Zaboravljena lozinka";
             this.btnZabLozinka.UseVisualStyleBackColor = false;
@@ -102,7 +102,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(234)))));
-            this.ClientSize = new System.Drawing.Size(514, 313);
+            this.ClientSize = new System.Drawing.Size(540, 335);
             this.Controls.Add(this.btnZabLozinka);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);

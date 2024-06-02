@@ -38,18 +38,20 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 25);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(38, 33);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(158, 20);
+            this.label1.Size = new System.Drawing.Size(260, 29);
             this.label1.TabIndex = 0;
             this.label1.Text = "Vremensko razdoblje";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // cmbVrijeme
             // 
             this.cmbVrijeme.FormattingEnabled = true;
-            this.cmbVrijeme.Location = new System.Drawing.Point(328, 25);
+            this.cmbVrijeme.Location = new System.Drawing.Point(331, 37);
             this.cmbVrijeme.Name = "cmbVrijeme";
-            this.cmbVrijeme.Size = new System.Drawing.Size(121, 28);
+            this.cmbVrijeme.Size = new System.Drawing.Size(181, 28);
             this.cmbVrijeme.TabIndex = 1;
             // 
             // dgvIzvjestaj
@@ -59,15 +61,16 @@
             this.dgvIzvjestaj.Name = "dgvIzvjestaj";
             this.dgvIzvjestaj.RowHeadersWidth = 62;
             this.dgvIzvjestaj.RowTemplate.Height = 28;
-            this.dgvIzvjestaj.Size = new System.Drawing.Size(758, 250);
+            this.dgvIzvjestaj.Size = new System.Drawing.Size(986, 339);
             this.dgvIzvjestaj.TabIndex = 2;
             // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(199)))), ((int)(((byte)(164)))));
-            this.button1.Location = new System.Drawing.Point(378, 404);
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(366, 492);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(95, 34);
+            this.button1.Size = new System.Drawing.Size(221, 73);
             this.button1.TabIndex = 3;
             this.button1.Text = "Generiraj";
             this.button1.UseVisualStyleBackColor = false;
@@ -78,7 +81,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(245)))), ((int)(((byte)(234)))));
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1014, 594);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dgvIzvjestaj);
             this.Controls.Add(this.cmbVrijeme);
