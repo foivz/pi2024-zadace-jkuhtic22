@@ -7,6 +7,11 @@ Ime i prezime | E-mail adresa (FOI) | JMBAG | Github korisničko ime
 Juraj Vito Kuhtić | jkuhtic22@student.foi.hr | 0016160221 | jkuhtic22
 
 
+Korisničko ime: zaposlenik
+Lozinka: test
+
+Ili pritisnite na gumb "Zaboravljena lozinka"
+
 ## Opis domene
 Softver za upravljanje recikliranjem i kapacitetima u gradu ima cilj poboljšati procese prikupljanja, evidentiranja, rezervacije te praćenja reciklabilnih materijala u centrima za recikliranje. S obzirom na sve veći naglasak na zaštiti okoliša i održivom upravljanju otpadom, ovaj softver pruža potrebne alate za efikasno upravljanje materijalima, kapacitetima skladišta te generiranje izvještaja o recikliranju.
 
