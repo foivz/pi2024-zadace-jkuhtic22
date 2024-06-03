@@ -7,7 +7,7 @@ Ime i prezime | E-mail adresa (FOI) | JMBAG | Github korisničko ime
 Juraj Vito Kuhtić | jkuhtic22@student.foi.hr | 0016160221 | jkuhtic22
 
 
-Korisničko ime: zaposlenik
+Korisničko ime: zaposlenik <br>
 Lozinka: test
 
 Ili pritisnite na gumb "Zaboravljena lozinka"
